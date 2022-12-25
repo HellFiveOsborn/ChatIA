@@ -1,0 +1,113 @@
+pre code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+pre {
+    white-space: break-spaces;
+}
+
+/* Define o estilo da barra de rolagem */
+.chat::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+  }
+  
+  /* Define a cor do cursor da barra de rolagem */
+  .chat::-webkit-scrollbar-thumb {
+    background-color: #777777;
+    border-radius: 10px;
+  }
+  
+  /* Define a cor do cursor da barra de rolagem ao passar o mouse por cima */
+  .chat::-webkit-scrollbar-thumb:hover {
+    background-color: #888888;
+  }
+  
+
+  .chat {
+      display: flex;
+      flex-direction: column;
+      height: 500px;
+      overflow-y: scroll;
+      padding-inline: 2em;
+      padding-block: 1.2em;
+  }
+  .chat .message {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+  .chat .message.mine {
+    align-items: flex-end;
+    flex-direction: row-reverse;
+  }
+  .chat .message p {
+    background: #eee;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  .chat .message.mine p {
+    background: #4caf50;
+    color: #fff;
+  }
+  /* Ajusta o tamanho da área de texto */
+  textarea.form-control {
+      height: 40px;
+      width: 80%;
+      float: left;
+      overflow: auto; /* Habilita a barra de rolagem */
+      resize: vertical; 
+      max-height: 300px;
+    /* Remove a barra de rolagem */
+    overflow: hidden;
+
+    /* Adiciona as cores do chatgpt */
+    background-color: #f5f5f5;
+    border: 1px solid #dcdcdc;
+    color: #333;
+  }
+
+  /* Ajusta o tamanho e a cor do botão */
+  button.btn {
+      height: 40px;
+      background-color: #3498db;
+      color: #fff;
+      width: 15%;
+      margin-left: 10px;
+  }
+
+  /* Limpa os floats e ajusta o tamanho da área de mensagens */
+  .chat .message p {
+      background: #eee;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 16px;
+      max-width: 80%;
+  }
+
+  /* Ajusta a fonte e o tamanho da fonte das mensagens */
+  .message p {
+      font-size: 18px;
+      font-family: sans-serif;
+  }
+
+  form#chat-form {
+      display: flex;
+      justify-content: center;
+      background: #f7f7f7;
+      padding: 7px;
+      border-block-start: 1px solid #ced4da;
+      border-block-end: 1px solid #ced4da;
+  }
+
+  .container {
+    background: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+  }
